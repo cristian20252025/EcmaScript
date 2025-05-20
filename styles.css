@@ -18,10 +18,12 @@
   
   main {
     padding: 1em;
+
   }
   
   h2 {
     color: #333;
+
   }
   
   table {
@@ -50,3 +52,4 @@
     position: sticky;
     bottom: 0;
   }
+  

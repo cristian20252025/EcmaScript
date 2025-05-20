@@ -9,32 +9,92 @@
 <body>
   <header>
     <h1>Tutorial ECMAScript</h1>
-    <p>Guía completa de versiones y nuevas funcionalidades</p>
   </header>
 
   <main>
     <section id="que-es">
       <h2>¿Qué es ECMAScript?</h2>
-      <p>ECMAScript es la especificación que define cómo debe funcionar JavaScript...</p>
+      <p>Cuando hablamos de ECMAScript, nos referimos al estándar que ya va por la versión ES6 y  determina cómo emplear el lenguaje Javascript, que permite a los fabricantes de software desarrollar las herramientas adecuada para interpretarlo correctamente.
+
+        Hoy en día, existen múltiples plataformas que interpretan y procesan Javascript, como por ejemplo NodeJS o los navegadores web. También es utilizado para el desarrollo de aplicaciones de diferentes sistemas operativos. Es el estándar ECMAScript el que marca cómo deberá ser interpretado el lenguaje en cada una de estas tecnologías.</p>
     </section>
 
     <section id="versiones">
       <h2>Versiones de ECMAScript</h2>
+      <p>Versiones ECMASCript
+        Como ocurre con todos los avances tecnológicos, Javascript ha pasado por diferentes versiones, cada una con novedades que mejoraban la anterior. ECMA es quien se encargó de estandarizar Javascript y ya va por la versión ES6.
+        
+        Cabe destacar que la versión anterior, ES5, permaneció durante tanto tiempo que se convirtió en la versión más extendida de Javascript en todo tipo de plataformas. Es una versión con un índice muy alto de compatibilidad, que la convierte en candidata ideal para ser empleada en la escritura de código que valga para todos los tipos de sistemas o navegadores.
+        
+        Hoy en día, son muchos los sistemas capaces de interpretar la versión que apareció en 2015, la ES6, que presenta diversas mejoras respecto al lenguaje y nuevas variantes respecto a la programación. Actualmente, ya se está trabajando en la siguiente versión, la ES7, que seguirá mejorando la productividad y manejo de Javascript, adaptándose así a las nuevas necesidades.</p>
       <table>
         <tr><th>Versión</th><th>Año</th><th>Novedades</th></tr>
-        <tr><td>ES6</td><td>2015</td><td>let, const, arrow functions...</td></tr>
-        <!-- Agrega más filas -->
+        <tr><td>ES1</td><td>1997</td><td>Primera versión</td></tr>
+        <tr><td>ES2</td><td>1998</td><td>Cambios editoriales</td></tr>
+        <tr><td>ES3</td><td>1999</td><td><ul>
+            <li>Se agregaron expresiones regulares.</li>
+            <li>Se agregó try/catch.</li>
+            <li>Se agregó switch.</li>
+            <li>Se agregó do-while.</li></ul></td></tr>
+        <tr><td>ES4</td><td></td><td>Nunca publicado</td></tr>    
+        <tr><td>ES5</td><td>1999</td><td><ul>
+                <li>Se agregó "modo estricto".</li>
+                <li>Se agregó compatibilidad con JSON.</li>
+                <li>Se agregó String.trim().</li>
+                <li>Se agregó Array.isArray().</li>
+                <li>Se agregaron métodos de iteración de matriz.</li>
+                <li>Permite comas finales para literales de objeto.</li>
+            </ul>
+            <a href="#ejemplos5"><i class="ejemploES5"></i> Ejemplos</a></td></tr>
+        
       </table>
     </section>
 
-    <section id="ejemplos">
-      <h2>Ejemplos</h2>
-      <pre><code>const saludo = nombre => `Hola ${nombre}`;</code></pre>
+    <section id="ejemplos5">
+      <h2>Ejemplos ES5</h2>
+      <h3>La directiva de "uso estricto"</h3>
+      <p>"use strict"define que el código JavaScript debe ejecutarse en "modo estricto".
+
+        Con el modo estricto no puedes, por ejemplo, utilizar variables no declaradas.
+        
+        Puedes usar el modo estricto en todos tus programas. Esto te ayuda a escribir código más limpio, por ejemplo, evitando el uso de variables no declaradas.
+        
+        "use strict"Es solo una expresión de cadena. Los navegadores antiguos no generarán un error si no la entienden.</p>
+        <h3>Acceso a la propiedad en cadenas</h3>
+        <p>El charAt()método devuelve el carácter en un índice (posición) especificado en una cadena:</p>
+        <pre><code>var str = "HELLO WORLD";
+            str.charAt(0);            // returns H</code></pre>
+        <h3>Matriz para cada uno()</h3>
+        <p>El forEach()método llama a una función una vez para cada elemento de la matriz.</p>
+        <pre><code>var txt = "";
+            var numbers = [45, 4, 9, 16, 25];
+            numbers.forEach(myFunction);
+            
+            function myFunction(value) {
+              txt = txt + value + "<br>";
+            }</code></pre>     
+    </section>
+
+    <section id="transpiladores">
+        <h2>Transpiladores</h2>
+        <p>Javascript es totalmente dinámico, estando en un proceso constante de cambio y mejora. Como ocurrió con cada una de las anteriores versiones de ECMAScript, al principio no todos los navegadores y plataformas soportaban esta nueva versión. Para evitar y subsanar estos problemas de compatibilidad, se utilizan los transpiladores, una herramienta realmente útil.
+
+            Los transpiladores son programas utilizados en la traducción del código de un lenguaje para utilizarlo en otro, o de una versión para otra, permitiendo hacer compatible cualquier código en cualquier tipo de plataforma.
+            
+            Básicamente, los transpiladores se emplean en la fase de desarrollo del proyecto, donde el programador tiene que escribir el código y éste hace su trabajo traduciéndolo, compilando y adaptándolo. Este nuevo código, ya compatible, es el que se distribuye o despliega para llevarlo a producción. Una vez traducido el código, no es necesaria la herramienta en lo que resta del desarrollo del proyecto.
+            
+            Gracias a los transpiladores, lenguajes como Flow, TypeScript y CoffeScript se traducen a Javascript ES5, siendo de este modo compatibles con cualquier plataforma.</p>
+        
     </section>
   </main>
 
+  
+
   <footer>
-    <p>&copy; 2025 - ECMAScript Tutorial</p>
+    <p>ECMAScript Tutorial<br>
+        Juan Pablo Cifuentes<br>
+        Cristian perez
+    </p>
   </footer>
 </body>
 </html>
